@@ -1,0 +1,26 @@
+---
+title: "Análisis de complejidad"
+output: html_notebook
+---
+
+```{r}
+library(readr)
+library(ggplot2)
+```
+
+```{r}
+DF <- read_csv("results.csv")
+```
+
+```{r}
+DF
+```
+```{r}
+DF$n <- DF$n + 1
+```
+
+
+```{r}
+ggplot(DF) + geom_point(aes(x=DF$n, y=DF$`duration(ns)`)) + scale_x_log10() + scale_y_log10() + labs(x="log(n)", y="log(Tiempo de ejecución)", title="Tiempo de ejecución vs. tamaño de entrada (escala logarítmica)")
+```
+

@@ -1,11 +1,7 @@
 #ifndef ORDENAMIENTO_COUNTING_SORT_H
 #define ORDENAMIENTO_COUNTING_SORT_H
 
-#include <iostream>
-#include <fstream>
-#include <ctime>
 #include <cmath>
-#include <chrono>
 
 // enteros de 0 a k
 void counting_sort(int *a, int size) {
@@ -26,7 +22,7 @@ void counting_sort(int *a, int size) {
     }
     // 4. acumular cuenta
     for (int i = 1; i < k; ++i) {
-        c[i] = c[i] + c[i-1];
+        c[i] = c[i] + c[i - 1];
     }
     // 5. crear nuevo arreglo
     int *b = new int[size];
