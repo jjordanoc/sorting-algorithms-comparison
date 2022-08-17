@@ -12,3 +12,5 @@ add_executable(test_counting_sort test_counting_sort.cpp counting_sort.h test.h)
 add_executable(test_selection_sort.cpp test_selection_sort.cpp selection_sort.h test.h)
 
 add_executable(test_intro_sort.cpp test_intro_sort.cpp intro_sort.h test.h)
+
+add_executable(test_counting_sort_extended test_counting_sort_extended.cpp counting_sort.h test.h)

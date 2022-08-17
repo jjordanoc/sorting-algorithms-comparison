@@ -23,4 +23,9 @@ int main() {
     print_array(a2);
     counting_sort(a2, 9);
     print_array(a2);
+    // ejemplo 3
+    int a3[] = {-39, 34, 42, 40, -44, 44, 31, 19, -3, -1, -7, 0, 0, -1, -40};
+    print_array(a3);
+    counting_sort_extended(a3, 15);
+    print_array(a3);
 }
