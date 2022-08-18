@@ -35,7 +35,7 @@ void test_sorting_algorithm(Function &sorting_algorithm, const std::string &file
     std::ofstream results("../analisis/" + filename);
     results << "n,duration(ns)"
             << "\n";
-    for (int i = 10; i <= pow(10, 5); i *= 10) {
+    for (int i = 10; i <= pow(10, 6); i *= 10) {
         run_test(i, results, sorting_algorithm);
     }
 }
